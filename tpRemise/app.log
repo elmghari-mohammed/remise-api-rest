@@ -1,0 +1,309 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------< org.example:tpRemise >------------------------
+[INFO] Building tpRemise 0.0.2
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ tpRemise >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ tpRemise ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ tpRemise ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 25 source files with javac [debug parameters release 17] to target\classes
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::objectFieldOffset has been called by lombok.permit.Permit
+WARNING: Please consider reporting this to the maintainers of class lombok.permit.Permit
+WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ tpRemise ---
+[INFO] skip non existing resourceDirectory C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ tpRemise ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] 
+[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ tpRemise <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.5:run (default-cli) @ tpRemise ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-05-21T14:19:16.470+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : Starting TpRemiseApplication using Java 25.0.1 with PID 16652 (C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise\target\classes started by Dell in C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise)
+2026-05-21T14:19:16.473+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-21T14:19:16.516+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-21T14:19:16.516+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-21T14:19:17.036+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-21T14:19:17.082+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interface.
+2026-05-21T14:19:17.441+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8090 (http)
+2026-05-21T14:19:17.452+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-21T14:19:17.452+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-21T14:19:17.487+01:00  INFO 16652 --- [tpRemise] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 970 ms
+2026-05-21T14:19:17.553+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-21T14:19:17.694+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-05-21T14:19:17.695+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-21T14:19:17.787+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-21T14:19:17.826+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-05-21T14:19:18.176+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-21T14:19:18.235+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-21T14:19:18.862+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-21T14:19:18.868+01:00  INFO 16652 --- [tpRemise] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-21T14:19:18.928+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-21T14:19:19.134+01:00  WARN 16652 --- [tpRemise] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-21T14:19:19.361+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8090 (http) with context path '/'
+2026-05-21T14:19:19.365+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : Started TpRemiseApplication in 3.221 seconds (process running for 3.619)
+Hibernate: SELECT r.taux FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+9200.0
+2026-05-21T14:19:21.416+01:00  INFO 16652 --- [tpRemise] [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-21T14:19:21.417+01:00  INFO 16652 --- [tpRemise] [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-21T14:19:21.417+01:00  INFO 16652 --- [tpRemise] [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+Hibernate: SELECT * FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+2026-05-21T14:19:27.934+01:00  WARN 16652 --- [tpRemise] [nio-8090-exec-2] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.example.tpremise.exception.RemiseException: L'ID de la remise doit être nul pour une création]
+Hibernate: select count(*) from remise r1_0 where r1_0.id=?
+2026-05-21T14:19:29.114+01:00  WARN 16652 --- [tpRemise] [nio-8090-exec-8] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.example.tpremise.exception.RemiseException: Remise not found with id: 999]
+Hibernate: select count(*) from remise r1_0 where r1_0.id=?
+2026-05-21T14:19:29.626+01:00  WARN 16652 --- [tpRemise] [nio-8090-exec-9] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [org.example.tpremise.exception.RemiseException: Remise non trouvée avec l'id: 999]
+Hibernate: insert into remise (montant_max,montant_min,taux,id) values (?,?,?,default)
+2026-05-21T14:23:25.800+01:00  INFO 16652 --- [tpRemise] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 26 deletions, 1 modification)
+2026-05-21T14:23:25.803+01:00  INFO 16652 --- [tpRemise] [       Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-21T14:23:25.811+01:00  INFO 16652 --- [tpRemise] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-21T14:23:25.814+01:00  INFO 16652 --- [tpRemise] [       Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-21T14:23:25.818+01:00  WARN 16652 --- [tpRemise] [       Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-05-21T14:23:25.819+01:00  INFO 16652 --- [tpRemise] [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-05-21T14:23:25.820+01:00  INFO 16652 --- [tpRemise] [       Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-05-21T14:23:25.895+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : Starting TpRemiseApplication using Java 25.0.1 with PID 16652 (C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise\target\classes started by Dell in C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise)
+2026-05-21T14:23:25.895+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-21T14:23:26.001+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-21T14:23:26.003+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-05-21T14:23:26.059+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8090 (http)
+2026-05-21T14:23:26.060+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-21T14:23:26.060+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-05-21T14:23:26.078+01:00  INFO 16652 --- [tpRemise] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 181 ms
+2026-05-21T14:23:26.096+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-05-21T14:23:26.098+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2026-05-21T14:23:26.098+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-05-21T14:23:26.111+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-21T14:23:26.140+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-21T14:23:26.142+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-21T14:23:26.159+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-21T14:23:26.160+01:00  INFO 16652 --- [tpRemise] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-21T14:23:26.184+01:00  WARN 16652 --- [tpRemise] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-21T14:23:26.263+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8090 (http) with context path '/'
+2026-05-21T14:23:26.266+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : Started TpRemiseApplication in 0.389 seconds (process running for 250.521)
+2026-05-21T14:23:26.268+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Exception in thread "restartedMain" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+Caused by: java.lang.NoClassDefFoundError: org/example/tpremise/service/FacturationService
+	at org.example.tpremise.TpRemiseApplication.main(TpRemiseApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 2 more
+Caused by: java.lang.ClassNotFoundException: org.example.tpremise.service.FacturationService
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 4 more
+2026-05-21T14:23:27.682+01:00  INFO 16652 --- [tpRemise] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 26 class path changes (26 additions, 0 deletions, 0 modifications)
+2026-05-21T14:23:27.683+01:00  INFO 16652 --- [tpRemise] [       Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-21T14:23:27.689+01:00  INFO 16652 --- [tpRemise] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-05-21T14:23:27.690+01:00  INFO 16652 --- [tpRemise] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-21T14:23:27.690+01:00  WARN 16652 --- [tpRemise] [       Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de données est déjà fermée (pour désactiver la fermeture automatique à l'arrêt de la VM, ajoutez "; DB_CLOSE_ON_EXIT = FALSE" à l'URL db)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-05-21T14:23:27.691+01:00  INFO 16652 --- [tpRemise] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-05-21T14:23:27.691+01:00  INFO 16652 --- [tpRemise] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+Logging system failed to initialize using configuration from 'null'
+java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1606)
+	at java.base/java.util.HashMap$EntryIterator.next(HashMap.java:1639)
+	at java.base/java.util.HashMap$EntryIterator.next(HashMap.java:1637)
+	at java.base/java.util.HashMap.putMapEntries(HashMap.java:520)
+	at java.base/java.util.HashMap.<init>(HashMap.java:493)
+	at ch.qos.logback.core.ContextBase.getCopyOfPropertyMap(ContextBase.java:92)
+	at ch.qos.logback.classic.spi.LoggerContextVO.<init>(LoggerContextVO.java:53)
+	at ch.qos.logback.classic.LoggerContext.updateLoggerContextVO(LoggerContext.java:101)
+	at ch.qos.logback.classic.LoggerContext.putProperty(LoggerContext.java:107)
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:220)
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:195)
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:176)
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:171)
+	at org.springframework.boot.logging.LoggingSystemProperties.apply(LoggingSystemProperties.java:128)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystemProperties.apply(LogbackLoggingSystemProperties.java:83)
+	at org.springframework.boot.logging.LoggingSystemProperties.apply(LoggingSystemProperties.java:113)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadDefaults$0(LogbackLoggingSystem.java:243)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:491)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadDefaults(LogbackLoggingSystem.java:234)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:89)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:65)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:337)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:302)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:248)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:225)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:180)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:151)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133)
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:137)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$0(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ImmutableCollections$List12.forEach(ImmutableCollections.java:681)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:123)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.example.tpremise.TpRemiseApplication.main(TpRemiseApplication.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-05-21T14:23:27.757+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : Starting TpRemiseApplication using Java 25.0.1 with PID 16652 (C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise\target\classes started by Dell in C:\4 eme annee\Spring\tps\tpRemiseDAO\tpRemise)
+2026-05-21T14:23:27.757+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-05-21T14:23:27.769+01:00 ERROR 16652 --- [tpRemise] [  restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.util.ConcurrentModificationException
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:352) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:302) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:248) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:225) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:180) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:173) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:151) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:137) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$0(SpringApplicationRunListeners.java:66) ~[spring-boot-4.0.5.jar:4.0.5]
+	at java.base/java.util.ImmutableCollections$List12.forEach(ImmutableCollections.java:681) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:123) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:356) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.example.tpremise.TpRemiseApplication.main(TpRemiseApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+Caused by: java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1606) ~[na:na]
+	at java.base/java.util.HashMap$EntryIterator.next(HashMap.java:1639) ~[na:na]
+	at java.base/java.util.HashMap$EntryIterator.next(HashMap.java:1637) ~[na:na]
+	at java.base/java.util.HashMap.putMapEntries(HashMap.java:520) ~[na:na]
+	at java.base/java.util.HashMap.<init>(HashMap.java:493) ~[na:na]
+	at ch.qos.logback.core.ContextBase.getCopyOfPropertyMap(ContextBase.java:92) ~[logback-core-1.5.32.jar:1.5.32]
+	at ch.qos.logback.classic.spi.LoggerContextVO.<init>(LoggerContextVO.java:53) ~[logback-classic-1.5.32.jar:1.5.32]
+	at ch.qos.logback.classic.LoggerContext.updateLoggerContextVO(LoggerContext.java:101) ~[logback-classic-1.5.32.jar:1.5.32]
+	at ch.qos.logback.classic.LoggerContext.putProperty(LoggerContext.java:107) ~[logback-classic-1.5.32.jar:1.5.32]
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:220) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:195) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:176) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.LoggingSystemProperties.setSystemProperty(LoggingSystemProperties.java:171) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.LoggingSystemProperties.apply(LoggingSystemProperties.java:128) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystemProperties.apply(LogbackLoggingSystemProperties.java:83) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.LoggingSystemProperties.apply(LoggingSystemProperties.java:113) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.lambda$loadDefaults$0(LogbackLoggingSystem.java:243) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.withLoggingSuppressed(LogbackLoggingSystem.java:491) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadDefaults(LogbackLoggingSystem.java:234) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:89) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:65) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:197) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:337) ~[spring-boot-4.0.5.jar:4.0.5]
+	... 22 common frames omitted
+
+2026-05-21T14:23:27.857+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-21T14:23:27.865+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2026-05-21T14:23:27.907+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8090 (http)
+2026-05-21T14:23:27.921+01:00  INFO 16652 --- [tpRemise] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 163 ms
+2026-05-21T14:23:27.936+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-05-21T14:23:27.937+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+2026-05-21T14:23:27.937+01:00  INFO 16652 --- [tpRemise] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-05-21T14:23:27.949+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-05-21T14:23:27.970+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-21T14:23:27.971+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:testdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TESTDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-21T14:23:28.005+01:00  INFO 16652 --- [tpRemise] [  restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-21T14:23:28.006+01:00  INFO 16652 --- [tpRemise] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-21T14:23:28.065+01:00  WARN 16652 --- [tpRemise] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-21T14:23:28.113+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8090 (http) with context path '/'
+2026-05-21T14:23:28.114+01:00  INFO 16652 --- [tpRemise] [  restartedMain] o.example.tpremise.TpRemiseApplication   : Started TpRemiseApplication in 0.374 seconds (process running for 252.368)
+2026-05-21T14:23:28.115+01:00  INFO 16652 --- [tpRemise] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+Hibernate: SELECT r.taux FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+9200.0
+2026-05-21T14:23:40.726+01:00  INFO 16652 --- [tpRemise] [nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-21T14:23:40.727+01:00  INFO 16652 --- [tpRemise] [nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: SELECT r.taux FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT * FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT r.taux FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT * FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT r.taux FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT * FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT r.taux FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+Hibernate: SELECT * FROM remise r WHERE ? BETWEEN r.montant_min AND r.montant_max ORDER BY r.montant_min DESC LIMIT 1
+2026-05-21T14:25:16.821+01:00  WARN 16652 --- [tpRemise] [nio-8090-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' is not supported]
+2026-05-21T14:26:52.908+01:00  WARN 16652 --- [tpRemise] [nio-8090-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
