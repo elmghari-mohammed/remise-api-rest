@@ -5,6 +5,11 @@ spring:
   application:
     name: tpRemise
 
+  devtools:
+    restart:
+      enabled: false        # ← Empêche le redémarrage auto qui laisse des processus zombies
+    add-properties: false   # ← Supprime le warning "Devtools property defaults active"
+
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
@@ -18,7 +23,7 @@ spring:
 
   sql:
     init:
-      mode: always                   # ← Exécute data.sql à chaque démarrage
+      mode: always
 
   h2:
     console:
