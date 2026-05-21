@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: tpRemise
+  profiles:
+    active: hibernate
 
   devtools:
     restart:

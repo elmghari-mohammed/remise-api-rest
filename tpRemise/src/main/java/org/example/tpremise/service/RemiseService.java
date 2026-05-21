@@ -16,7 +16,7 @@ public class RemiseService {
 
     private final RemiseDao remiseDao;
 
-    public RemiseService(RemiseDao remiseDao) {
+    public RemiseService(@Qualifier("remiseHibernateDao") RemiseDao remiseDao) {
         this.remiseDao = remiseDao;
     }
 
